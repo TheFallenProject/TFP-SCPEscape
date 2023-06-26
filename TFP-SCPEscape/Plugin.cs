@@ -80,6 +80,11 @@ namespace TFP_SCPEscape
                     pl.Role.Set(PlayerRoles.RoleTypeId.NtfSergeant, Exiled.API.Enums.SpawnReason.Respawn, PlayerRoles.RoleSpawnFlags.All);
                 }
             }
+            else
+            {
+                pl.Hurt(5f, "<color=red>Кемперить в Escape плохо!</color>");
+                pl.ShowHint("<color=red>Уходите отсюда!</color>", 2);
+            }
         }
     }
 }
